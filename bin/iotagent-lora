@@ -11,6 +11,17 @@
 
 var iotAgentLora = require('../lib/iotagent-lora');
 var winston = require('winston');
+winston.configure({
+    format: winston.format.combine(
+        winston.format.splat(),
+        winston.format.timestamp(),
+        // winston.format.simple()
+        winston.format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
+    ),
+    transports: [
+        new winston.transports.Console()
+    ]
+});
 
 function start () {
     var config;
