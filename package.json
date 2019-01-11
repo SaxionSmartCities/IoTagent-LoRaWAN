@@ -20,12 +20,13 @@
   "dependencies": {
     "async": "^2.6.1",
     "cbor-sync": "^1.0.3",
-    "iotagent-node-lib": "2.8.1",
+    "iotagent-node-lib": "git://github.com/telefonicaid/iotagent-node-lib",
     "mqtt": "^2.18.8",
     "request": "^2.88.0",
     "winston": "^3.1.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.8.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
@@ -35,7 +36,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "nock": "^10.0.2",
-    "unit.js": "^2.0.0"
+    "nock": "^10.0.2"
   }
 }
